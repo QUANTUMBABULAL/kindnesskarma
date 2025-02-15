@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kindness AI</title>
+  <link rel="stylesheet" href="style1.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar"> 
+    <!-- Search bar for downvoting (functionality to be added later) -->
+    <div class="search-container">
+      <input type="text" id="downvoteSearch" placeholder="Search...">
+    </div>
+    <h1>Kind Karma</h1>
+  </header>
+
+  <main class="container">
+    <section class="chat-section">
+      <div class="chat-box" id="chatBox"></div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="How can I be kind today?">
+        <button id="sendBtn">Send</button>
+      </div>
+    </section>
+    
+    <section class="streak-section">
+      <h3>🔥 Streak: <span id="streakCount">0</span> Days</h3>
+    </section>
+    
+    <section class="actions">
+      <button id="doneBtn">Done ✅</button>
+      <a href="second.html" class="view-deeds-btn">View My Kindness Deeds 📜</a>
+    </section>
+    
+    <section class="upload-section">
+      <input type="file" id="imageUpload" accept="image/*">
+      <button id="uploadBtn">Upload Proof 📸</button>
+    </section>
+  </main>
+  
+  <!-- Hidden popup; will be created/shown by script.js when Done is clicked -->
+  <div id="congratsPopup" class="hidden"></div>
+
+
+</body>
+</html>
